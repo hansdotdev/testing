@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!--Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Albert+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Albert+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="icon-navbar">
+        <ul>
+            <li><a href="#home" class="tooltip"><i class="fa-solid fa-house"></i><span class="tooltip-text">Home</span></a></li>
+            <li><a href="#about" class="tooltip"><i class="fa-solid fa-user"></i><span class="tooltip-text">About</span></a></li>
+            <li><a href="#skills" class="tooltip"><i class="fa-solid fa-code"></i><span class="tooltip-text">Skills</span></a></li>
+            <li><a href="#projects" class="tooltip"><i class="fa-solid fa-folder"></i><span class="tooltip-text">Projects</span></a></li>
+            <li><a href="#contact" class="tooltip"><i class="fa-solid fa-envelope"></i><span class="tooltip-text">Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="intro-wrapper">
+            <img src="img/profile.jpg" alt="profile" class="profile-img">
+            <div class="intro-container">
+                <h2>Hi,</h2>
+                <h1>I'm <span class="highlight">Hans</span></h1>
+                <p class="intro-text">
+                    I'm a <strong><span class="dynamic-description"></span><span class="cursor">|</span></strong>.
+                </p>
+                <a href="#contact" class="contact-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--About -->
+    <section id="about" class="section">
+        <h2 class="fade-in">About me</h2>
+        <p class="fade-in">
+            Hi, I'm Aubrey Hans Lining, a passionate third-year college student from Marinduque State University pursuing a Bachelor of Science in Information Technology. I specialize in video and photo editing, programming with Python and C#, and have beginner-level experience in HTML, CSS, and JavaScript. I enjoy creating interactive prototypes using tools like Figma and Mockplus, which help visualize ideas and streamline project development. Combining creativity and technical expertise, I strive to bring innovative solutions to life. I'm eager to learn new technologies, take on challenges, and collaborate on projects that make an impact. 
+            <span class="highlight"><br>Let's create something amazing together!</span>
+        </p>
+    </section>
+    
+    <!--Skills -->
+    <section id="skills" class="section">
+        <div class="light-ball big-left"></div>
+        <div class="light-ball small-right-1"></div>
+        <div class="light-ball small-right-2"></div>
+        <h2 class="fade-in">My skills</h2>
+        <div class="skills-container">
+            <img id="ai" src="img/skills/Ai.png" alt="">
+            <img id="ps" src="img/skills/ps.png" alt="">
+            <img id="capcut" src="img/skills/capcut.jpg" alt="">
+            <img id="figma" src="img/skills/figma.png" alt="">
+            <img id="mockplus" src="img/skills/mockplus.png" alt="">
+            <img id="css" src="img/skills/css.png" alt="">
+            <img id="html" src="img/skills/html.png" alt="">
+            <img id="js" src="img/skills/js.png" alt="">
+            <img id="c-sharp" src="img/skills/c-sharp.png" alt="">
+            <img id="python" src="img/skills/python.png" alt="">
+        </div>
+    </section>
+    
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2 class="section-title">My projects</h2>
+        <div class="folder-container">
+            <div class="folder" id="project1">
+                <a href="https://github.com/hansdotdev/BurgerHaus-FOS">
+                    <img src="img/project/burgerhaus.png" alt="Project 1" class="folder-image">
+                    <h2 id="title">BURGERHAUS</h2>
+                    <h3>A food ordering system kiosk.</h3>
+                    <p><strong>built with: </strong>C# windows form</p>
+                </a>
+            </div>
+            <div class="folder" id="project2">
+                <a href="https://github.com/hansdotdev/Food-to-Go">
+                    <img src="img/project/foodtogo.png" alt="Project 2" class="folder-image">
+                    <h2 id="title">Food To Go</h2>
+                    <h3>A online food delivery app prototype.</h3>
+                    <p><strong>built with: </strong>Mockplus classic</p>
+                </a>
+            </div>
+            <div class="folder" id="project3">
+                <a href="https://github.com/hansdotdev/Guess-Grow">
+                    <img src="img/project/guessandgrow.jpg" alt="Project 3" class="folder-image">
+                    <h2 id="title">Guess & Grow</h2>
+                    <h3>A guessing game, BMI calculator, and Learning material app.</h3>
+                    <p><strong>built with: </strong>Android Studio, Java</p>
+                </a>
+            </div>
+            <div class="folder" id="project4">
+                <a href="https://hansdotdev.github.io/Marinduque-Wonders/">
+                    <img src="img/project/marinduquewonders.png" alt="Project 4" class="folder-image">
+                    <h2 id="title">Marinduque Wonders</h2>
+                    <h3>A blog about Marinduque and its wonders</h3>
+                    <p><strong>built with: </strong>Html, Css, JavaScript</p>
+                </a>
+            </div>
+            <div class="folder" id="project5">
+                <a href="https://hansdotdev.github.io/Sales-Monitoring-System/">
+                    <img src="img/project/salesmonitoringsystem.png" alt="Project 5" class="folder-image">
+                    <h2 id="title">Sales Monitoring System</h2>
+                    <h3>A static website mockup.</h3>
+                    <p><strong>built with: </strong>Html, Css, JavaScript</p>
+                </a>
+            </div>
+            <div class="folder" id="project6">
+                <a href="https://drive.google.com/drive/folders/12V6YfX5_BPbcu5vEdHCvJOekITj0jGEa?usp=sharing">
+                    <img src="img/project/game.png" alt="Project 6" class="folder-image">
+                    <h2 id="title">The Worst Maze Game of Hero</h2>
+                    <h3>A rpg game.</h3>
+                    <p><strong>built with: </strong>Unity, C#</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact -->
+    <section id="contact" class="section">
+        <h1>Contact Me</h1>
+        <div class="social-icons">
+            <a href="https://facebook.com/hanslining" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://m.me/hanslining" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://instagram.com/hanseyooo?igsh=YmhvNGdkamF2cXgz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/hansdotdev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.upwork.com/freelancers/~012f350ff3f3e4bf7e?mp_source=share" target="_blank"><i class="fa-brands fa-upwork"></i></a>
+        </div>
+    </section>
+    <!--Footer -->
+    <footer>
+        <p>©Copyright 2024. Made by Aubrey Hans Lining</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="portfolio.js"></script>
+</body>
+</html>
